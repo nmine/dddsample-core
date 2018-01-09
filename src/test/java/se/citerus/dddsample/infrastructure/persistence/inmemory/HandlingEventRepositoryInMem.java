@@ -1,8 +1,8 @@
 package se.citerus.dddsample.infrastructure.persistence.inmemory;
 
 import se.citerus.dddsample.domain.model.cargo.TrackingId;
-import se.citerus.dddsample.domain.model.handling.HandlingEvent;
-import se.citerus.dddsample.domain.model.handling.HandlingEventRepository;
+import se.citerus.dddsample.domain.event.HandlingEvent;
+import se.citerus.dddsample.domain.repositories.HandlingEventRepository;
 import se.citerus.dddsample.domain.model.handling.HandlingHistory;
 
 import java.util.*;

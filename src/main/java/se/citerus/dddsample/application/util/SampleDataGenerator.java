@@ -7,12 +7,16 @@ import org.springframework.transaction.PlatformTransactionManager;
 import org.springframework.transaction.TransactionStatus;
 import org.springframework.transaction.support.TransactionCallbackWithoutResult;
 import org.springframework.transaction.support.TransactionTemplate;
+import se.citerus.dddsample.domain.event.HandlingEvent;
+import se.citerus.dddsample.domain.factories.HandlingEventFactory;
 import se.citerus.dddsample.domain.model.cargo.*;
 import se.citerus.dddsample.domain.model.handling.*;
 import se.citerus.dddsample.domain.model.location.Location;
-import se.citerus.dddsample.domain.model.location.LocationRepository;
+import se.citerus.dddsample.domain.repositories.LocationRepository;
 import se.citerus.dddsample.domain.model.location.SampleLocations;
-import se.citerus.dddsample.domain.model.voyage.VoyageRepository;
+import se.citerus.dddsample.domain.repositories.VoyageRepository;
+import se.citerus.dddsample.domain.repositories.CargoRepository;
+import se.citerus.dddsample.domain.repositories.HandlingEventRepository;
 
 import java.sql.Timestamp;
 import java.text.ParseException;

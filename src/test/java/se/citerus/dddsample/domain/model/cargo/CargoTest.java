@@ -29,7 +29,7 @@ import org.junit.Before;
 import org.junit.Test;
 
 import se.citerus.dddsample.application.util.DateTestUtil;
-import se.citerus.dddsample.domain.model.handling.HandlingEvent;
+import se.citerus.dddsample.domain.event.HandlingEvent;
 import se.citerus.dddsample.domain.model.handling.HandlingHistory;
 import se.citerus.dddsample.domain.model.location.Location;
 import se.citerus.dddsample.domain.model.voyage.Voyage;

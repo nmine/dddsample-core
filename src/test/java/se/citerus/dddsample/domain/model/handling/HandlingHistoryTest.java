@@ -12,6 +12,7 @@ import java.util.Date;
 import org.junit.Before;
 import org.junit.Test;
 
+import se.citerus.dddsample.domain.event.HandlingEvent;
 import se.citerus.dddsample.domain.model.cargo.Cargo;
 import se.citerus.dddsample.domain.model.cargo.RouteSpecification;
 import se.citerus.dddsample.domain.model.cargo.TrackingId;

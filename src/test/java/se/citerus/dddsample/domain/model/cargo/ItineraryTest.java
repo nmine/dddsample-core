@@ -18,7 +18,7 @@ import java.util.List;
 import org.junit.Before;
 import org.junit.Test;
 
-import se.citerus.dddsample.domain.model.handling.HandlingEvent;
+import se.citerus.dddsample.domain.event.HandlingEvent;
 import se.citerus.dddsample.domain.model.voyage.CarrierMovement;
 import se.citerus.dddsample.domain.model.voyage.Voyage;
 import se.citerus.dddsample.domain.model.voyage.VoyageNumber;

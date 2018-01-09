@@ -18,7 +18,7 @@
 
     <jaxws:endpoint id="jax-ws.http" implementor="#handlingReportService" address="/RegisterEvent"/>
 
-    <bean id="handlingReportService" class="se.citerus.dddsample.interfaces.handling.ws.HandlingReportServiceImpl">
+    <bean id="handlingReportService" class="se.citerus.dddsample.presentation.ws.HandlingReportServiceImpl">
         <property name="applicationEvents" ref="applicationEvents"/>
     </bean>
 
@@ -31,31 +31,31 @@
 
     <task:scheduler id="myScheduler" pool-size="10"/>
 
-    <bean id="uploadDirectoryScanner" class="se.citerus.dddsample.interfaces.handling.file.UploadDirectoryScanner">
+    <bean id="uploadDirectoryScanner" class="se.citerus.dddsample.presentation.file.UploadDirectoryScanner">
         <property name="uploadDirectory" value="/tmp/upload"/>
         <property name="parseFailureDirectory" value="/tmp/failed"/>
         <property name="applicationEvents" ref="applicationEvents"/>
     </bean>
 
-    <bean id="handlingReportConsumptionSupport" class="se.citerus.dddsample.interfaces.handling.HandlingReportParser"/>
+    <bean id="handlingReportConsumptionSupport" class="se.citerus.dddsample.application.handling.HandlingReportParser"/>
 
     <bean id="bookingServiceFacade"
-          class="se.citerus.dddsample.interfaces.booking.facade.internal.BookingServiceFacadeImpl">
+          class="se.citerus.dddsample.application.facade.internal.BookingServiceFacadeImpl">
         <property name="bookingService" ref="bookingService"/>
         <property name="cargoRepository" ref="cargoRepository"/>
         <property name="locationRepository" ref="locationRepository"/>
         <property name="voyageRepository" ref="voyageRepository"/>
     </bean>
 
-    <bean id="trackCommandValidator" class="se.citerus.dddsample.interfaces.tracking.TrackCommandValidator"/>
+    <bean id="trackCommandValidator" class="se.citerus.dddsample.presentation.web.tracking.TrackCommandValidator"/>
 
-    <bean class="se.citerus.dddsample.interfaces.booking.web.CargoAdminController">
+    <bean class="se.citerus.dddsample.presentation.web.CargoAdminController">
         <property name="bookingServiceFacade" ref="bookingServiceFacade"/>
     </bean>
 
     <!-- Tracking web application support -->
 
-    <bean class="se.citerus.dddsample.interfaces.tracking.CargoTrackingController">
+    <bean class="se.citerus.dddsample.presentation.web.tracking.CargoTrackingController">
         <property name="cargoRepository" ref="cargoRepository"/>
         <property name="handlingEventRepository" ref="handlingEventRepository"/>
         <property name="messageSource" ref="messageSource"/>

@@ -16,16 +16,16 @@ import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 
-import se.citerus.dddsample.application.impl.HandlingEventServiceImpl;
+import se.citerus.dddsample.application.services.impl.HandlingEventServiceImpl;
 import se.citerus.dddsample.domain.model.cargo.Cargo;
-import se.citerus.dddsample.domain.model.cargo.CargoRepository;
+import se.citerus.dddsample.domain.repositories.CargoRepository;
 import se.citerus.dddsample.domain.model.cargo.RouteSpecification;
 import se.citerus.dddsample.domain.model.cargo.TrackingId;
-import se.citerus.dddsample.domain.model.handling.HandlingEvent;
-import se.citerus.dddsample.domain.model.handling.HandlingEventFactory;
-import se.citerus.dddsample.domain.model.handling.HandlingEventRepository;
-import se.citerus.dddsample.domain.model.location.LocationRepository;
-import se.citerus.dddsample.domain.model.voyage.VoyageRepository;
+import se.citerus.dddsample.domain.event.HandlingEvent;
+import se.citerus.dddsample.domain.factories.HandlingEventFactory;
+import se.citerus.dddsample.domain.repositories.HandlingEventRepository;
+import se.citerus.dddsample.domain.repositories.LocationRepository;
+import se.citerus.dddsample.domain.repositories.VoyageRepository;
 
 public class HandlingEventServiceTest {
   private HandlingEventServiceImpl service;

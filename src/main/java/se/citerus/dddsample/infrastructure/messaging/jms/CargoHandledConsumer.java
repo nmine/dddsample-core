@@ -2,7 +2,7 @@ package se.citerus.dddsample.infrastructure.messaging.jms;
 
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
-import se.citerus.dddsample.application.CargoInspectionService;
+import se.citerus.dddsample.application.services.CargoInspectionService;
 import se.citerus.dddsample.domain.model.cargo.TrackingId;
 
 import javax.jms.Message;

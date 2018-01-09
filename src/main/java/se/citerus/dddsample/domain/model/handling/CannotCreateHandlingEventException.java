@@ -1,7 +1,9 @@
 package se.citerus.dddsample.domain.model.handling;
 
+import se.citerus.dddsample.domain.event.HandlingEvent;
+
 /**
- * If a {@link se.citerus.dddsample.domain.model.handling.HandlingEvent} can't be
+ * If a {@link HandlingEvent} can't be
  * created from a given set of parameters.
  *
  * It is a checked exception because it's not a programming error, but rather a

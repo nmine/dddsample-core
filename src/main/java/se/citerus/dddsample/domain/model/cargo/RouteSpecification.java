@@ -5,7 +5,7 @@ import org.apache.commons.lang.builder.EqualsBuilder;
 import org.apache.commons.lang.builder.HashCodeBuilder;
 import se.citerus.dddsample.domain.model.location.Location;
 import se.citerus.dddsample.domain.shared.AbstractSpecification;
-import se.citerus.dddsample.domain.shared.ValueObject;
+import se.citerus.dddsample.domain.model.ValueObject;
 
 import java.util.Date;
 
