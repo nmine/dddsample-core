@@ -18,7 +18,7 @@
 
     <jaxws:endpoint id="jax-ws.http" implementor="#handlingReportService" address="/RegisterEvent"/>
 
-    <bean id="handlingReportService" class="se.citerus.dddsample.presentation.ws.HandlingReportServiceImpl">
+    <bean id="handlingReportService" class="se.citerus.dddsample.infrastructure.ws.HandlingReportServiceImpl">
         <property name="applicationEvents" ref="applicationEvents"/>
     </bean>
 
@@ -31,7 +31,7 @@
 
     <task:scheduler id="myScheduler" pool-size="10"/>
 
-    <bean id="uploadDirectoryScanner" class="se.citerus.dddsample.presentation.file.UploadDirectoryScanner">
+    <bean id="uploadDirectoryScanner" class="se.citerus.dddsample.infrastructure.file.UploadDirectoryScanner">
         <property name="uploadDirectory" value="/tmp/upload"/>
         <property name="parseFailureDirectory" value="/tmp/failed"/>
         <property name="applicationEvents" ref="applicationEvents"/>

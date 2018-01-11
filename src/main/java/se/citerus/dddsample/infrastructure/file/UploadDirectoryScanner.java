@@ -1,4 +1,4 @@
-package se.citerus.dddsample.presentation.file;
+package se.citerus.dddsample.infrastructure.file;
 
 import org.apache.commons.io.FileUtils;
 import org.apache.commons.logging.Log;

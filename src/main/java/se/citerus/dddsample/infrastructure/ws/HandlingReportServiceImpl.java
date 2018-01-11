@@ -1,4 +1,4 @@
-package se.citerus.dddsample.presentation.ws;
+package se.citerus.dddsample.infrastructure.ws;
 
 import com.aggregator.HandlingReport;
 import com.aggregator.HandlingReportErrors;
